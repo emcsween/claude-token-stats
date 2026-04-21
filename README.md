@@ -17,7 +17,7 @@ Key details:
 Clone the repo, then link or copy `token-stats.py` into `~/.claude/` so the status-line script can find it at the standard path:
 
 ```sh
-git clone https://github.com/ericmcsween/claude-token-stats ~/github/claude-token-stats
+git clone https://github.com/emcsween/claude-token-stats ~/github/claude-token-stats
 ln -s ~/github/claude-token-stats/token-stats.py ~/.claude/token-stats.py
 ```
 
