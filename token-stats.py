@@ -230,7 +230,7 @@ def read_file_entries(path: Path, month_str: str) -> list:
         if not ts:
             continue
         try:
-            dt = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+            dt = datetime.fromisoformat(ts.replace("Z", "+00:00")).astimezone()
             entry_date = dt.strftime("%Y-%m-%d")
             entry_month = dt.strftime("%Y-%m")
         except (ValueError, TypeError):
